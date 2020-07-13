@@ -78,3 +78,20 @@ Here are the steps in creating your environment:
 </code></pre>
 
 You should encounter no errors.  Now your environment is ready to go for the lessons.
+
+## Jupyter Notebook IDE
+
+If you set up your python environment using Anaconda or Minicoda, you will also
+be able to run the Jupyter Notebook IDE for python.  To start the Notebook IDE,
+execute the following command line in your prompt.
+
+<pre><code>
+
+   >>> activate py37cv
+   >>> jupyter notebook
+
+</code></pre>
+
+This will start the Notebook IDE in your preferred browser as http://localhost:8888/?token=xxxx
+If you use Chrome, this will automatically be launched there.  You can always grab the link
+and paste it in your browser if needed.
