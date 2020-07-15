@@ -56,7 +56,7 @@ Here are the steps in creating your environment:
 
 </code></pre>
 
-8. Type or copy all the packages import from the beginning of Lesson 1's intro_cv_lesson1.py at the prompt:
+8. Type the following package import at the prompt:
 
 <pre><code>
 
