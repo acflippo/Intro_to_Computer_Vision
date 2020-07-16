@@ -6,13 +6,13 @@ I'll provide inline reference to the source code, discussions
 and inspiration.
 
 ## Environment
-The instructions below have been tested on Python 3.7
-I mainly use Anaconda https://www.anaconda.com/
+The instructions below have been tested on Python 3.7.
+I mainly use Anaconda https://www.anaconda.com/products/individual > Products > Individual Edition
 as my virtual environment and install the necessary packages.
 
 Here are the steps in creating your environment:
 
-1. Install Anaconda or Miniconda according to instructions for your operating system.
+1. Install Anaconda according to instructions for your operating system.
 
 2. Create a python 3.7 with the basic packages as follows in your terminal via command line.
 
@@ -72,7 +72,7 @@ Here are the steps in creating your environment:
 
 You should encounter no errors.  Now your environment is ready to go for the lessons.
 
-### Windows Environment Troubleshooting
+#### Windows Environment Troubleshooting
 
 If you have issues importing imutils, try the following to install imutils.
 
@@ -100,13 +100,13 @@ execute the following command line in your prompt.
 
 </code></pre>
 
-This will start the Notebook IDE in your preferred browser as http://localhost:8888/?token=xxxx
+This will start the Notebook IDE in your preferred browser as http://localhost:8888/?token=xxxx .
 You can always grab the link and paste it in your browser if needed.
 
 To exit your Notebook environment, just save your notebook and close all Jupyter notebook tabs in your browser.
-On the command prompt from where your notebook was launched, run Ctrl-C to stop the IDE and type "y" return to confirm.
+On the command prompt from where your notebook was launched, run Ctrl-C to stop the IDE and type "y" <hit return> to confirm.
 
-### Windows Environment Troubleshooting
+#### Windows Environment Troubleshooting
 
 If you have trouble running "jupyter notebook", try installing or re-installing jupyter package.
 
