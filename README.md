@@ -8,7 +8,6 @@ and inspiration.
 ## Environment
 The instructions below have been tested on Python 3.7
 I mainly use Anaconda https://www.anaconda.com/
-or Miniconda https://docs.conda.io/en/latest/miniconda.html
 as my virtual environment and install the necessary packages.
 
 Here are the steps in creating your environment:
@@ -37,7 +36,7 @@ Here are the steps in creating your environment:
 
 <pre><code>
    prompt> conda install -c conda-forge imutils
-   </code></pre>
+</code></pre>
 
 6. Install OpenCV if not already installed
 
@@ -53,35 +52,44 @@ Here are the steps in creating your environment:
    Python 3.7.7 (default, May  6 2020, 04:59:01)
    [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
    >>>
-
 </code></pre>
 
 8. Type the following package import at the prompt:
 
 <pre><code>
-
    >>> from skimage.measure import compare_ssim
    >>> import argparse
    >>> import imutils
    >>> import cv2
    >>> import numpy as np
-   >>>
-
 </code></pre>
 
 9. To exit from the python interactive session, type exit() and hit return.
 
 <pre><code>
-
    >>> exit()
-
 </code></pre>
 
 You should encounter no errors.  Now your environment is ready to go for the lessons.
 
+### Windows Environment Troubleshooting
+
+If you have issues importing imutils, try the following to install imutils.
+
+<pre><code>
+   prompt> conda install pip
+   prompt> pip install imutils
+</code></pre>
+
+Or, for Windows 10 64-bit, try:
+<pre><code>
+   prompt> conda install -c pjamesjoyce imutils
+</code></pre>
+
+
 ## Jupyter Notebook IDE
 
-If you set up your python environment using Anaconda or Minicoda, you will also
+If you set up your python environment using Anaconda, you will
 be able to run the Jupyter Notebook IDE for python.  To start the Notebook IDE,
 execute the following command line in your prompt.
 
@@ -93,5 +101,15 @@ execute the following command line in your prompt.
 </code></pre>
 
 This will start the Notebook IDE in your preferred browser as http://localhost:8888/?token=xxxx
-If you use Chrome, this will automatically be launched there.  You can always grab the link
-and paste it in your browser if needed.
+You can always grab the link and paste it in your browser if needed.
+
+To exit your Notebook environment, just save your notebook and close all Jupyter notebook tabs in your browser.
+On the command prompt from where your notebook was launched, run Ctrl-C to stop the IDE and type "y" return to confirm.
+
+### Windows Environment Troubleshooting
+
+If you have trouble running "jupyter notebook", try installing or re-installing jupyter package.
+
+<pre><code>
+   prompt> conda install -c anaconda jupyter
+</code></pre>
