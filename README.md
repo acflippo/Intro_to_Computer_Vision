@@ -21,6 +21,8 @@ For Windows, you will need to use the __"Anaconda Prompt"__ and not the generic 
    prompt> conda create -n py37cv python=3.7 conda numpy scipy
 </code></pre>
 
+It will ask you to confirm the installation of package, you enter "y" to confirm.
+
 3. Activate your environment
 
 <pre><code>
@@ -45,7 +47,7 @@ For Windows, you will need to use the __"Anaconda Prompt"__ and not the generic 
    prompt> conda install -c conda-forge opencv
    </code></pre>
 
-7. To verify your environment, invoke the python interactive command prompt by typing "python" in your terminal.
+7. To verify your environment, invoke the python interactive command prompt by executing "python" in your terminal.
 
 <pre><code>
    prompt> python
@@ -92,12 +94,13 @@ Or, for Windows 10 64-bit, try:
 
 If you set up your python environment using Anaconda, you will
 be able to run the Jupyter Notebook IDE for python.  To start the Notebook IDE,
-execute the following command line in your prompt.
+activate the py37cv environment. Your prompt will change to (py37cv) when your
+environment is activated and execute "jupyter notebook" as follows.
 
 <pre><code>
 
-   >>> activate py37cv
-   >>> jupyter notebook
+   (base)> activate py37cv
+   (py37cv)> jupyter notebook
 
 </code></pre>
 
@@ -106,6 +109,14 @@ You can always grab the link and paste it in your browser if needed.
 
 To exit your Notebook environment, just save your notebook and close all Jupyter notebook tabs in your browser.
 On the command prompt from where your notebook was launched, run Ctrl-C to stop the IDE and type "y" <hit return> to confirm.
+To deactivate your python environment run "conda deactivate".
+
+<pre><code>
+
+   >>> Ctrl-C [enter]
+   >>> conda deactivate
+
+</code></pre>
 
 #### Windows Environment Troubleshooting
 
