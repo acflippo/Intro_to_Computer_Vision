@@ -15,7 +15,7 @@ Here are the steps in creating your environment:
 1. Install Anaconda according to instructions for your operating system.
 
 2. Create a python 3.7 with the basic packages as follows in your terminal via command line for Mac OS.
-For Windows, you will need to use the __"Anaconda Prompt"__ or __"Anaconda Powershell Prompt"__ and not the generic Window's Prompt.
+For Windows, you will need to use the __"Anaconda Prompt"__ and not the generic Window's Prompt.
 
 <pre><code>
    prompt> conda create -n py37cv python=3.7 conda numpy scipy
@@ -124,4 +124,14 @@ If you have trouble running "jupyter notebook", try installing or re-installing 
 
 <pre><code>
    prompt> conda install -c anaconda jupyter
+</code></pre>
+
+
+#### Jupyter Lab
+
+Jupyter Lab provides the same functionality as Jupyter notebook but with better navigation.
+To get Jupyter Lab, install the following in your environment.
+
+<pre><code>
+   prompt> conda install -c conda-forge jupyterlab
 </code></pre>
