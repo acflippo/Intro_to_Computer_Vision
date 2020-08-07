@@ -5,6 +5,31 @@ I will be using online resources and examples whenever it is available.
 I'll provide inline reference to the source code, discussions
 and inspiration.
 
+## Topics
+
+1. Lesson 1: Computer Vision Basics
+  - 1D, 2D and 3D arrays
+  - Read in a picture
+  - Grayscale a picture
+  - Subset an array and picture
+
+2. Lesson 2: Blurring
+  - Primary Colors in computer vision is Red, Green and Blue
+  - Subtractive versus Additive color processes
+  - Why blur a picture
+
+3. Lesson 3: Edge Detection
+  - How to write a function in Python
+  - What is a gradient (in the x-direction)
+  - Write your own gradient function (for the y-direction) for a grayscale picture
+
+4. Lesson 4: Color Detection
+  - Bitwise operations
+  - Error Handling in Python
+  - Another color coding system (HSV = Hue, Saturation and Value)
+  - Finding contours
+
+
 ## Environment
 The instructions below have been tested on Python 3.7.
 I mainly use Anaconda https://www.anaconda.com/products/individual > Products > Individual Edition
@@ -12,7 +37,7 @@ as my virtual environment and install the necessary packages.
 
 Here are the steps in creating your environment:
 
-1. Install Anaconda according to instructions for your operating system.
+1. Install Anaconda according to the instructions for your operating system.
 
 2. Create a python 3.7 with the basic packages as follows in your terminal via command line for Mac OS.
 For Windows, you will need to use the __"Anaconda Prompt"__ and not the generic Window's Prompt.
@@ -110,6 +135,9 @@ You can always grab the link and paste it in your browser if needed.
 To exit your Notebook environment, just save your notebook and close all Jupyter notebook tabs in your browser.
 On the command prompt from where your notebook was launched, run Ctrl-C to stop the IDE and type "y" <hit return> to confirm.
 To deactivate your python environment run "conda deactivate".
+
+Note: __DO NOT USE the Anaconda Navigator__ (the GUI) to launch your Juypter notebook as it will not
+initiate your py37cv environment as required for these lessons.
 
 <pre><code>
 
