@@ -7,27 +7,27 @@ and inspiration.
 
 ## Topics
 
-1. Lesson 1: Computer Vision Basics
-  - 1D, 2D and 3D arrays
-  - Read in a picture
-  - Grayscale a picture
-  - Subset an array and picture
+__Lesson 1: Computer Vision Basics__
+    - 1D, 2D and 3D arrays
+    - Read in a picture
+    - Grayscale a picture
+    - Subset an array and picture
 
-2. Lesson 2: Blurring
-  - Primary Colors in computer vision is Red, Green and Blue
-  - Subtractive versus Additive color processes
-  - Why blur a picture
+__Lesson 2: Blurring__
+    - Primary Colors in computer vision is Red, Green and Blue
+    - Subtractive versus Additive color processes
+    - Why blur a picture
 
-3. Lesson 3: Edge Detection
-  - How to write a function in Python
-  - What is a gradient (in the x-direction)
-  - Write your own gradient function (for the y-direction) for a grayscale picture
+__Lesson 3: Edge Detection__
+    - How to write a function in Python
+    - What is a gradient (in the x-direction)
+    - Write your own gradient function (for the y-direction) for a grayscale picture
 
-4. Lesson 4: Color Detection
-  - Bitwise operations
-  - Error Handling in Python
-  - Another color coding system (HSV = Hue, Saturation and Value)
-  - Finding contours
+__Lesson 4: Color Detection__
+    - Bitwise operations
+    - Error Handling in Python
+    - Another color coding system (HSV = Hue, Saturation and Value)
+    - Finding contours
 
 
 ## Environment
