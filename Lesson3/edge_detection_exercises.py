@@ -83,6 +83,7 @@ plt.title("Zebra Gradient XY")
 plt.imshow(zebra_gradient_xy_img, cmap='gray')
 plt.show()
 
+#######################################
 # This is a smarter way to write the gradient in the y-direction from Joshua S.
 # which does not require transposing the final list array
 
@@ -109,6 +110,7 @@ def image_gradient_in_y(image):
     diff_array = np.reshape(diff_list, (n_row, n_col))
     return diff_array
 
+#######################################
 # This combines the gradients from X and Y directions in one function
 # by looping through the rows and columns only once which reduces processing time
 def image_gradient_in_xy2(image):
