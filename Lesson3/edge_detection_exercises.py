@@ -82,3 +82,79 @@ plt.subplot(1, 3, 3)
 plt.title("Zebra Gradient XY")
 plt.imshow(zebra_gradient_xy_img, cmap='gray')
 plt.show()
+
+# This is a smarter way to write the gradient in the y-direction from Joshua S.
+# which does not require transposing the final list array
+
+def image_gradient_in_y(image):
+    (n_row, n_col) = image.shape
+    # Save the changes into a list
+    diff_list = []
+    for row_i in range(n_row):
+        if IMAGE_DEBUG == True:
+            print("row_i: %i"%(row_i))
+        for col_j in range(n_col):
+            if col_j == 0:
+                diff_list.append(0)
+                if IMAGE_DEBUG == True:
+                    print("          col_j: %i ,  value = %i"%(col_j, small_blur[row_i, col_j]))
+            else:
+                value = int(image[row_i, col_j])
+                prev  = int(image[row_i-1, col_j])
+                diff  = amplify_diff(value - prev)
+                diff_list.append(diff)
+                if IMAGE_DEBUG == True:
+                    print("          col_j: %i ,  value = %i,  prev = %i,  diff = %i "%(col_j, value, prev, diff))
+    # Convert the list back into an array of the same shape as the input image
+    diff_array = np.reshape(diff_list, (n_row, n_col))
+    return diff_array
+
+# This combines the gradients from X and Y directions in one function
+# by looping through the rows and columns only once which reduces processing time
+def image_gradient_in_xy2(image):
+    """
+    This function will return the gradient of a gray-scale image.
+    The differences of pixel values will be amplified by amplify_diff().
+    """
+    (n_row, n_col) = image.shape
+
+    # Save the changes into a list
+    diff_list = []
+
+    for row_i in range(n_row):
+        if IMAGE_DEBUG == True:
+            print("row_i: %i"%(row_i))
+
+        for col_j in range(n_col):
+            if col_j == 0:
+                diff_list.append(0)
+                if IMAGE_DEBUG == True:
+                    print("          col_j: %i ,  value = %i"%(col_j, small_blur[row_i, col_j]))
+            else:
+                value = int(image[row_i, col_j])
+
+                # Calculate gradients in both X and Y directions
+                prev_x  = int(image[row_i, col_j-1])
+                prev_y  = int(image[row_i-1, col_j])
+
+                diff_x  = amplify_diff(value - prev_x)
+                diff_y  = amplify_diff(value - prev_y)
+
+                # Combined the gradients for both X and Y directions
+                diff_max = max(diff_x, diff_y)
+
+                diff_list.append(diff_max)
+                if IMAGE_DEBUG == True:
+                    print("          col_j: %i ,  value = %i,  prev = %i,  diff = %i "%(col_j, value, prev, diff))
+
+    # Convert the list back into an array of the same shape as the input image
+    diff_array = np.reshape(diff_list, (n_row, n_col))
+
+    return diff_array
+
+# Test this function with the gray zebra
+zebra_gradient_xy2_img = image_gradient_in_xy2(zebra_gray_blur_img)
+
+plt.title("Zebra Gradient XY")
+plt.imshow(zebra_gradient_xy2_img, cmap='gray')
+plt.show()
