@@ -39,11 +39,11 @@ Here are the steps in creating your environment:
 
 1. Install Anaconda according to the instructions for your operating system.
 
-2. Create a python 3.7 with the basic packages as follows in your terminal via command line for Mac OS.
+2. Create a python 3.8 with the basic packages as follows in your terminal via command line for Mac OS.
 For Windows, you will need to use the __"Anaconda Prompt"__ and not the generic Window's Prompt.
 
 <pre><code>
-   prompt> conda create -n py37cv python=3.7 conda numpy scipy
+   prompt> conda create -n py38cv python=3.8 conda numpy scipy
 </code></pre>
 
 It will ask you to confirm the installation of package, you enter "y" to confirm.
@@ -51,7 +51,7 @@ It will ask you to confirm the installation of package, you enter "y" to confirm
 3. Activate your environment
 
 <pre><code>
-   prompt> conda activate py37cv
+   prompt> conda activate py38cv
 </code></pre>
 
 4. Install image processing libraries
@@ -77,8 +77,8 @@ It will ask you to confirm the installation of package, you enter "y" to confirm
 <pre><code>
    prompt> python
 
-   Python 3.7.7 (default, May  6 2020, 04:59:01)
-   [Clang 4.0.1 (tags/RELEASE_401/final)] :: Anaconda, Inc. on darwin
+   Python 3.8.5 | packaged by conda-forge | (default, Jul 31 2020, 02:18:36)
+   [Clang 10.0.1 ] on darwin
    >>>
 </code></pre>
 
@@ -90,6 +90,10 @@ It will ask you to confirm the installation of package, you enter "y" to confirm
    >>> import imutils
    >>> import cv2
    >>> import numpy as np
+   >>> print(cv2.__version__)
+
+   >>> 4.4.0     # this can return any 4.x.x version depending on your operating system and when you installed opencv
+
 </code></pre>
 
 9. To exit from the python interactive session, type exit() and hit return.
@@ -119,13 +123,13 @@ Or, for Windows 10 64-bit, try:
 
 If you set up your python environment using Anaconda, you will
 be able to run the Jupyter Notebook IDE for python.  To start the Notebook IDE,
-activate the py37cv environment. Your prompt will change to (py37cv) when your
+activate the py38cv environment. Your prompt will change to (py38cv) when your
 environment is activated and execute "jupyter notebook" as follows.
 
 <pre><code>
 
-   (base)> activate py37cv
-   (py37cv)> jupyter notebook
+   (base)> activate py38cv
+   (py38cv)> jupyter notebook
 
 </code></pre>
 
@@ -137,7 +141,7 @@ On the command prompt from where your notebook was launched, run Ctrl-C to stop 
 To deactivate your python environment run "conda deactivate".
 
 Note: __DO NOT USE the Anaconda Navigator__ (the GUI) to launch your Juypter notebook as it will not
-initiate your py37cv environment as required for these lessons.
+initiate your py38cv environment as required for these lessons.
 
 <pre><code>
 
