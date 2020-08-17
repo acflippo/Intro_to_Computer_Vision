@@ -29,6 +29,16 @@ __Lesson 4: Color Detection__
 * Another color coding system (HSV = Hue, Saturation and Value)
 * Finding contours
 
+__Lesson 5: Shape Detection__
+* Shapes
+* SMore on contours
+* SCentroid and Area from Contours
+* Occulsion
+
+__Lesson 6: Shape Detection__
+* Angles
+* Distance
+* Distortions
 
 ## Environment
 The instructions below have been tested on Python 3.7.
